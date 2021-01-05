@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+#menu-toggle:checked+#menu {
+    display: block;
+}
+
+nav {
+    z-index: 10
+}
+
+nav.scrolled {
+    @apply shadow-md;
+    @apply bg-white;
+}
+
+#main {
+    background-image: url(../static/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#serviços {
+    background-color: #ffffff;
+}
+
+#projetos {
+    background-color: #ffffff;
+}
+
+#clientes {
+    background-color: #ffffff;
+}
+
+#contacto {
+    background-color: #fafafa;
+}
+
+.site-nav__link {
+    color: #257de2;
+    display: inline-block;
+    font-size: 0.9em;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    line-height: 1em;
+    padding: 0.75rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.site-nav__link:after {
+    border-bottom: 3px solid #257de2;
+    content: "";
+    display: block;
+    margin: 0.25em auto 0;
+    transition: width 250ms ease-in-out 0s;
+    width: 0;
+}
+
+.site-nav__link:hover:after {
+    transition: width 100ms ease-in-out 0s;
+    width: 100%;
+}

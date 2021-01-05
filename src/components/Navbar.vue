@@ -1,0 +1,122 @@
+<template>
+    <nav
+    :class="{ scrolled: !view.atTopOfPage }"
+      class=" fixed w-full lg:bg-white bg-white lg:shadow-none shadow-md flex flex-wrap items-center animated py-3 lg:px-0 px-2"
+    >
+      <div class="mx-auto container flex flex-wrap items-center">
+        <div class="flex-1 justify-between">
+        <a href="#main" v-smooth-scroll
+          >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="77.28"
+            height="77.56"
+            viewBox="0 0 276 277"
+          >
+            <image
+              id="acbt_logo"
+              data-name="acbt logo"
+              width="276"
+              height="277"
+              xlink:href="data:img/png;base64,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"
+            />
+          </svg>
+        </a>
+      </div>
+
+      <label for="menu-toggle" class="pointer-cursor lg:hidden block"
+        ><svg
+          class="fill-current text-gray-900"
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="45"
+          viewBox="0 0 20 20"
+        >
+          <title>menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg
+      ></label>
+      <input class="hidden" type="checkbox" id="menu-toggle" />
+
+      <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+        <div>
+          <ul
+            class="lg:flex items-center justify-between lg:text-xl text-lg font-semibold pt-4 lg:pt-0"
+          >
+            <li>
+              <a
+                href="#serviços"
+                class="lg:p-4 py-3 px-0 block border-b-2 border-transparent focus:outline-none site-nav__link"
+                v-smooth-scroll
+                >SERVIÇOS</a
+              >
+            </li>
+            <li>
+              <a
+                href="#projetos"
+                class="lg:p-4 py-3 px-0 block border-b-2 border-transparent focus:outline-none site-nav__link"
+                v-smooth-scroll
+                >PROJETOS</a
+              >
+            </li>
+            <li>
+              <a
+                href="#clientes"
+                class="lg:p-4 py-3 px-0 block border-b-2 border-transparent focus:outline-none site-nav__link"
+                v-smooth-scroll
+                >CLIENTES</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contacto"
+                class="lg:p-4 py-3 px-0 block border-b-2 border-transparent focus:outline-none site-nav__link"
+                v-smooth-scroll
+                >CONTACTO</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      </div>
+    </nav>
+ 
+</template>
+
+<script>
+
+
+export default {
+  components: {
+   
+  },
+  data() {
+    return {
+      view: {
+        atTopOfPage: true,
+      },
+    };
+  },
+  beforeMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  methods: {
+    // the function to call when the user scrolls, added as a method
+    handleScroll() {
+      // when the user scrolls, check the pageYOffset
+      if (window.pageYOffset > 0) {
+        // user is scrolled
+        if (this.view.atTopOfPage) this.view.atTopOfPage = false;
+      } else {
+        // user is at top of page
+        if (!this.view.atTopOfPage) this.view.atTopOfPage = true;
+      }
+    },
+  },
+};
+</script>
+
+<style src="../tailwind.css" />
+
+
+

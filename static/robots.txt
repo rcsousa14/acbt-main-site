@@ -1,0 +1,5 @@
+Sitemap: https://www.acbt.co.ao/sitemap.xml
+
+User-agent:*
+Disallow: /legal
+Disallow: /privacy
