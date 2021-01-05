@@ -10,3 +10,11 @@ This is the main project for the company I work for. I was trying to get started
 ### Website
 
 `http//www.acbt.co.ao`
+
+### Release
+ * Was able to give initial features for the web app used gridsome and tailwind primarly. The experience was good but gridsome is still a new framework.
+ * Was having some git problems but was able to fix them. Updated the site for 2021
+
+ ### TODO
+ * [x] optimize the site for 2021 (images, copyright, seo)
+ * [] find a better design for the site 
